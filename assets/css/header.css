@@ -1,0 +1,8 @@
+header {
+    background-color: var(--primary-color);
+    height: 50px;
+}
+
+.logomenu img {
+    width: 100px;
+}

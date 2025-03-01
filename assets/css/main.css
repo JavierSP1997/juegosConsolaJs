@@ -1,0 +1,30 @@
+#hero {
+    background-image: url(https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=85,width=1920/keyart/GR19V7816-backdrop_wide);
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    background-blend-mode: multiply;
+    background-color: #666;
+    color: white;
+    padding-top: 60px;
+
+    .container {
+        background-color: rgba(0, 0, 255, 0.3);
+        border: 1px solid var(--primary-color);
+        width: 400px;
+    }
+
+    h1 {
+        font-family: var(--primary-font);
+        font-weight: bold;
+        text-align: center;
+        color: var(--primary-color);
+        font-size: 3rem;
+    }
+
+    p {
+        font-family: var(--secondary-font);
+        font-weight: bold;
+    }
+
+}

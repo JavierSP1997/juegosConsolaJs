@@ -1,0 +1,13 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import url(header.css);
+@import url(main.css);
+@import url(variables.css);
+@import url(footer.css);
+@import url(mediaqueries.css);
+@import url(layout.css);
+
+.selected h2 {
+    display: none;
+}

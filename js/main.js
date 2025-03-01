@@ -8,21 +8,41 @@ formulario.addEventListener('submit', getData)
 function getData(event) {
     event.preventDefault();
 
-    const valor1 = input1.value;
-    const valor2 = input2.value;
+    const valor1 = input1.value.trim();
+    const valor2 = input2.value.trim();
 
     if (valor1 !== '' && valor2 !== '') {
-        const nuevoElemento = document.createElement('li');
-        nuevoElemento.textContent = `${valor1} - ${valor2}`;
-        const botonEliminar = document.createElement('button');
-        botonEliminar.textContent = 'Eliminar';
-        botonEliminar.addEventListener('click', function () {
-            lista.removeChild(nuevoElemento);
-        });
-        nuevoElemento.appendChild(botonEliminar);
-        lista.appendChild(nuevoElemento);
-        input1.value = '';
-        input2.value = '';
+        const nuevoElementoTexto = `El personaje: ${valor1}, es del universo: ${valor2}`;
+        const elementos = lista.getElementsByTagName('li');
+        let existe = false;
+
+        for (let li of elementos) {
+            if (li.textContent.includes(nuevoElementoTexto)) {
+                existe = true;
+                break;
+            }
+        }
+
+        if (!existe) {
+
+            const nuevoElemento = document.createElement('li');
+            nuevoElemento.textContent = nuevoElementoTexto;
+
+            const botonEliminar = document.createElement('button');
+            botonEliminar.textContent = 'X';
+
+            botonEliminar.addEventListener('click', function () {
+                lista.removeChild(nuevoElemento);
+            });
+
+            nuevoElemento.appendChild(botonEliminar);
+            lista.appendChild(nuevoElemento);
+
+            input1.value = '';
+            input2.value = '';
+        } else {
+            alert('Este valor ya ha sido agregado a la lista.');
+        }
     } else {
         alert('Por favor, rellena ambos campos.');
     }
