@@ -37,21 +37,24 @@
                     selección.</p>
             </div>
         </section>
-        <div class="formulario container">
-            <form id="formulario">
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="Goku black">
-                    <label for="floatingInput">Ingrese un personaje</label>
-                </div>
-                <div class="form-floating">
-                    <input type="number" class="form-control" id="floatingUniverse" placeholder="Universo" min="0"
-                        max="12">
-                    <label for="floatingUniverse">Inserte su universo</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Añadir Personaje</button>
-            </form>
-        </div>
-        <section class="selected" id="selected">
+        <section class="formulario">
+            <div class="container">
+                <h2>Selección de personajes:</h2>
+                <form id="formulario">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Goku black">
+                        <label for="floatingInput">Ingrese un personaje</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="number" class="form-control" id="floatingUniverse" placeholder="Universo" min="0"
+                            max="12">
+                        <label for="floatingUniverse">Inserte su universo</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Añadir Personaje</button>
+                </form>
+            </div>
+        </section>
+        <section class="listadepersonajes" id="selected">
             <h2>Lista de Personajes</h2>
             <ul id="listaPersonajes"></ul>
         </section>
