@@ -24,7 +24,7 @@ function getData(event) {
         }
 
         if (!existe) {
-
+            document.getElementById('titulolista').style.display = 'block';
             const nuevoElemento = document.createElement('li');
             nuevoElemento.textContent = nuevoElementoTexto;
 

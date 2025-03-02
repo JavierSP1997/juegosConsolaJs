@@ -2,17 +2,20 @@
     background-image: url(https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=85,width=1920/keyart/GR19V7816-backdrop_wide);
     background-size: cover;
     background-position: center;
-    height: 70vh;
+    height: auto;
     background-blend-mode: multiply;
     background-color: #666;
     color: white;
-    padding-top: 60px;
+    padding-top: 40px;
+    text-align: center;
+    padding-bottom: 50px;
 
-    .container {
+    .viñeta {
         background-color: rgba(0, 0, 255, 0.3);
         border: 1px solid var(--primary-color);
         width: 95%;
         border-radius: 10px;
+        margin-top: 30px;
     }
 
     h1 {
@@ -21,11 +24,32 @@
         text-align: center;
         color: var(--primary-color);
         font-size: 3rem;
+        padding-top: 20px;
     }
 
     p {
         font-family: var(--secondary-font);
         font-weight: bold;
+    }
+}
+
+#selected h2 {
+    display: none;
+}
+
+.selectorbutton {
+    text-align: center;
+    margin-top: 20px;
+
+    a {
+        text-decoration: none;
+        background-color: var(--primary-color);
+        border: 4px solid var(--secondary-color);
+        border-radius: 10px;
+        padding: 4px 6px;
+        color: var(--secondary-color);
+        font-family: var(--primary-font);
+        font-size: 1.2rem;
     }
 }
 
@@ -61,4 +85,12 @@
             }
         }
     }
+}
+
+#galeria .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Dos columnas */
+    gap: 20px;
+    /* Espacio entre las imágenes */
 }

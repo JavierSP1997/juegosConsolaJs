@@ -14,35 +14,61 @@
 <body>
     <header>
         <div class="logomenu">
-            <img src="" alt="logo">
-            <nav>
-                <ul>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                </ul>
+            <nav class="navbar navbar-dark">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                        aria-labelledby="offcanvasDarkNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Torneo de poder</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Intro</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Galeria</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Selección de personajes</a>
+                                </li>
+                        </div>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
     <main>
         <section id="hero">
-            <div class="container">
+            <div class="container viñeta">
                 <h1>El torneo de poder</h1>
-                <p>Bienvenido al mejor videojuego de la saga de Dragon Ball.</p>
-                <p>Aqui tendras la oportunidad de enfrentar a los mejores guerreros de los distintos universos.</p>
-                <p>Solo tendras que seleccionar el nombre del personaje y el universo al que pertenece, siempre y cuando
-                    este
-                    disponible en los personajes que puedes observar mas abajo, sin la posibilidad de poder repetir la
-                    selección.</p>
+                <h4>¡Bienvenido a la Dragon Ball Universe!</h4>
+                <p>Explora, selecciona y añade a tu personaje favorito de Dragon Ball a un universo único. Personaliza
+                    tu experiencia eligiendo entre una amplia gama de personajes y universos disponibles, y verás cómo
+                    se actualiza nuestro listado con todas las opciones creadas por ti y otros fanáticos. ¡La batalla de
+                    universos nunca ha sido tan épica!
+                </p>
+                <h4>¿Estás listo para unirte a la acción?</h4>
+                <p>¡Haz tu selección ahora y empieza a crear tu propio Dragon Ball Universe!</p>
+            </div>
+            <div class="selectorbutton container">
+                <a href="#formulario">Selecciona tus personajes</a>
             </div>
         </section>
-        <section class="formulario">
+        <section class="formulario" id="formulario">
             <div class="container">
                 <h2>Selección de personajes:</h2>
                 <form id="formulario">
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="Goku black">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Goku black"
+                            autocomplete="off">
                         <label for="floatingInput">Ingrese un personaje</label>
                     </div>
                     <div class="form-floating">
@@ -55,21 +81,51 @@
             </div>
         </section>
         <section class="listadepersonajes" id="selected">
-            <h2>Lista de Personajes</h2>
+            <h2 id="titulolista">Lista de Personajes</h2>
             <ul id="listaPersonajes"></ul>
         </section>
-        <section id="galeria">
+        <section id="galeria" class="container">
             <div class="grid">
-                <div class="card" style="width: 18rem;">
+                <figure>
                     <img src="https://static.printler.com/cache/e/e/4/d/9/4/ee4d94e709ba741f5871a0a4256f0c1c654a8486.jpg"
-                        class="card-img-top" alt="Goku">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                    </div>
-                </div>
+                        alt="">
+                    <figcaption>Goku, personaje del universo 7</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://static.printler.com/cache/e/e/4/d/9/4/ee4d94e709ba741f5871a0a4256f0c1c654a8486.jpg"
+                        alt="">
+                    <figcaption>Goku, personaje del universo 7</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://static.printler.com/cache/e/e/4/d/9/4/ee4d94e709ba741f5871a0a4256f0c1c654a8486.jpg"
+                        alt="">
+                    <figcaption>Goku, personaje del universo 7</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://static.printler.com/cache/e/e/4/d/9/4/ee4d94e709ba741f5871a0a4256f0c1c654a8486.jpg"
+                        alt="">
+                    <figcaption>Goku, personaje del universo 7</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://static.printler.com/cache/e/e/4/d/9/4/ee4d94e709ba741f5871a0a4256f0c1c654a8486.jpg"
+                        alt="">
+                    <figcaption>Goku, personaje del universo 7</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://static.printler.com/cache/e/e/4/d/9/4/ee4d94e709ba741f5871a0a4256f0c1c654a8486.jpg"
+                        alt="">
+                    <figcaption>Goku, personaje del universo 7</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://static.printler.com/cache/e/e/4/d/9/4/ee4d94e709ba741f5871a0a4256f0c1c654a8486.jpg"
+                        alt="">
+                    <figcaption>Goku, personaje del universo 7</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://static.printler.com/cache/e/e/4/d/9/4/ee4d94e709ba741f5871a0a4256f0c1c654a8486.jpg"
+                        alt="">
+                    <figcaption>Goku, personaje del universo 7</figcaption>
+                </figure>
             </div>
         </section>
     </main>
