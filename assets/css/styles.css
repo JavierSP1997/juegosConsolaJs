@@ -7,7 +7,3 @@
 @import url(footer.css);
 @import url(mediaqueries.css);
 @import url(layout.css);
-
-#selected h2 {
-    display: none;
-}

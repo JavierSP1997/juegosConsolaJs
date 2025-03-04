@@ -1,4 +1,32 @@
 header {
     background-color: var(--primary-color);
     height: 60px;
+    padding-top: 10px;
+
+    img {
+        width: 50px;
+    }
+
+    .encabezado.container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+    }
+
+    ul li {
+        margin-left: 20px;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: var(--secondary-color);
+        font-family: var(--secondary-font);
+        font-size: 1.2rem;
+    }
+
 }
