@@ -7,9 +7,13 @@ header {
         width: 50px;
     }
 
+    .title {
+        display: none;
+    }
+
     .encabezado.container {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
     }
 
@@ -27,6 +31,12 @@ header {
         color: var(--secondary-color);
         font-family: var(--secondary-font);
         font-size: 1.2rem;
+        transition: 1s;
+
+        &:hover {
+            color: white;
+            transition: 1s;
+        }
     }
 
 }

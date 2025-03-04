@@ -27,9 +27,11 @@ function getData(event) {
             document.getElementById('titulolista').style.display = 'block';
             const nuevoElemento = document.createElement('li');
             nuevoElemento.textContent = nuevoElementoTexto;
+            nuevoElemento.classList.add("listado");
 
             const botonEliminar = document.createElement('button');
             botonEliminar.textContent = 'X';
+            botonEliminar.classList.add("eliminar");
 
             botonEliminar.addEventListener('click', function () {
                 lista.removeChild(nuevoElemento);
