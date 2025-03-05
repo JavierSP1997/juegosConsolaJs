@@ -95,16 +95,28 @@
             color: white;
             padding-bottom: 5px;
             font-family: var(--primary-font);
+            transition: 0.5s;
+
+            &:hover {
+                color: gold;
+                transition: 0.5s;
+            }
 
             img {
                 height: 300px;
                 border-radius: 5px;
                 object-fit: contain;
+                transition: 0.8s;
 
+                &:hover {
+                    transform: scale(1.1);
+                    transition: 0.8s;
+                }
             }
         }
     }
 }
+
 
 .formulario {
     background-color: var(--primary-color);
