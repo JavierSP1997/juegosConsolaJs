@@ -1,1 +1,28 @@
-@media(min-width: 1004px) {}
+@media(min-width: 700px) {
+    header .title {
+        display: block;
+        font-family: var(--primary-font);
+        color: var(--secondary-color);
+        font-size: 1.2rem;
+    }
+
+    #hero img {
+        display: inline;
+    }
+
+    #galeria .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #formulario .mediaquery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+@media(min-width: 1000px) {
+    header .title {
+        font-size: 2rem;
+    }
+}
